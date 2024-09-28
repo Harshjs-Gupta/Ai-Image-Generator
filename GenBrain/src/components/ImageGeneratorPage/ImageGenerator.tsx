@@ -15,7 +15,7 @@ function ImageGenerator() {
   const [isLoading, setIsLoading] = useState(false);
   const [imageData, setImageData] = useState<
     { url: string; description: string }[]
-  >([]); // Store image URLs and descriptions
+  >([]); // Store image URLs and description
   const endRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
