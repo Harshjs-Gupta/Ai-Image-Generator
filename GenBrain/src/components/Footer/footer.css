@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 10px 0 10px;
+  padding: 10px;
+  gap: 1 10px;
+  /* border-top: 1px solid lightslategrey; */
+
+  .text_bar {
+    width: 800px;
+    background: rgba(128, 128, 128, 0.539);
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      img {
+        height: 30px;
+      }
+
+      input {
+        width: 650px;
+        background: transparent;
+        flex: 1;
+        outline: none;
+      }
+    }
+
+    img {
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+}
