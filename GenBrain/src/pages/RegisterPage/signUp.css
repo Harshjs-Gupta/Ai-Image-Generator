@@ -1,0 +1,103 @@
+.signUp-page {
+  height: 100vh;
+  background-image: url("../../assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.signUp-container {
+  background: transparent;
+  border: 3px solid white;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: white;
+    font-family: cursive;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: 30px;
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:active {
+      background-color: rgb(198, 195, 195);
+    }
+
+    span {
+      color: black;
+      font-size: 15px;
+    }
+    img {
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    input {
+      width: 100%;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 2px solid white;
+      border-radius: 10px;
+      outline: none;
+      color: white;
+    }
+
+    input:disabled {
+      cursor: not-allowed;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(54, 151, 247);
+      border-radius: 10px;
+
+      &:hover {
+        background-color: rgb(12, 126, 240);
+      }
+    }
+  }
+
+  pre {
+    color: white;
+    margin: top 10px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+  }
+}
