@@ -1,0 +1,66 @@
+.image-generate-page {
+  display: flex;
+  flex: 3.5;
+  flex-direction: column;
+  height: 100dvh;
+  color: white;
+  position: relative;
+  background-color: rgb(26, 25, 40);
+
+  .center {
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .loader {
+      display: flex;
+      align-self: center;
+      height: 100px;
+      width: 100px;
+    }
+    .output {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        gap: 30px;
+
+        .image-gallery {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+
+          .image-item {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+
+            img {
+              width: 300px;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 10px;
+            }
+
+            .description {
+              text-align: center;
+              margin-top: 8px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
