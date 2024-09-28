@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  gap: 20px;
+  /* border-bottom: 1px solid lightslategrey; */
+
+  .option {
+    width: 120px;
+
+    background: rgba(128, 128, 128, 0.502);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 5px;
+
+    span {
+      font-weight: 500;
+    }
+
+    img {
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .profile {
+    cursor: pointer;
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}
