@@ -1,0 +1,7 @@
+.main-container {
+  display: flex;
+  height: 100dvh;
+  color: white;
+  background-color: rgb(26, 25, 40);
+  overflow: hidden;
+}
