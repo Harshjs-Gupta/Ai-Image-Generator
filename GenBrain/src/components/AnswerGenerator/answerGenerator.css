@@ -1,7 +1,46 @@
-.main-container {
+.center {
+  padding: 10px 20px 20px 20px;
   display: flex;
-  height: 100dvh;
-  color: white;
-  background-color: rgb(26, 25, 40);
-  overflow: hidden;
+  flex-direction: column;
+  flex: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  .loader {
+    display: flex;
+    align-self: center;
+    height: 100px;
+    width: 100px;
+  }
+  .output {
+    display: flex;
+    flex-direction: column;
+
+    .question-box {
+      color: white;
+      width: 600px;
+      height: fit-content;
+      align-self: end;
+      background: rgb(147, 146, 146, 0.3);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .answer {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      gap: 30px;
+
+      .answer-box {
+        height: fit-content;
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 30px;
+        color: white;
+      }
+    }
+  }
 }
