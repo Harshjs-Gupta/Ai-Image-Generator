@@ -96,7 +96,7 @@ function ImageGenerator() {
       <SideBar />
       <div className="image-generate-page">
         <Header />
-        <div className="center scrollbar-thin overflow-hidden hover:overflow-scroll">
+        <div className="center overflow-hidden scrollbar-thin hover:overflow-scroll">
           {isLoading ? (
             <img src={loader} alt="loader" className="loader" />
           ) : (
