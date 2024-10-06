@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 import GenBrain from "../../assets/images/logo/GenBrain2.png";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import { auth } from "../../auth/firebase";
@@ -39,12 +39,6 @@ function LoginPage() {
       navigate("/image_generator_page");
     }
   }
-
-  useEffect(() => {
-    if (email) {
-      navigate("/image_generator_page");
-    }
-  }, [email, navigate]);
 
   return (
     <>
